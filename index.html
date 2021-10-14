@@ -417,17 +417,17 @@
                 </ul>
             </div>
             <div class="footer-content footer-subscribing">
-                <p class="footer-subscribing-title">Подпишитесь на рассылку</p>
                 <form class="footer-subscribing-form" action="javascript:void(0)">
-                    <input type="email" id="footer-subscribing-email-input" name="subscribing-email"
-                        placeholder="E-mail" class="footer-subscribing-input">
-                    <label for="footer-subscribing-email-label" class="footer-subscribing-label">
+                    <label for="footer-subscribing-email-input" class="footer-subscribing-label">Подпишитесь на рассылку</label>
+                    <div class="footer-subscribing-wrapper">
+                        <input type="email" id="footer-subscribing-email-input" name="subscribing-email"
+                            placeholder="E-mail" class="footer-subscribing-input">
                         <button type="submit" class="footer-subscribing-button"> Подписаться
                             <svg class="subscribe-icon">
                                 <use href="./images/icons.svg#icon-send"></use>
                             </svg>
                         </button>
-                    </label>
+                    </div>
                 </form>
             </div>
         </div>
@@ -490,6 +490,7 @@
                         </span>
                     </label>
                 </div>
+                <button type="submit" class="backdrop-submit-button"> Отправить </button>
             </form>
         </div>
     </div>
