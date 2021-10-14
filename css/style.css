@@ -828,8 +828,8 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    left: 0;
-    top: 0;
+    left: -1px;
+    top: 1px;
     background-color: var(--cards-background-color);
     width: 16px;
     height: 15px;
