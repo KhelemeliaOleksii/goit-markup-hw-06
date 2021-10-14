@@ -417,17 +417,18 @@
                 </ul>
             </div>
             <div class="footer-content footer-subscribing">
-                <p class="footer-subscribing-title">присоединяйтесь</p>
-                    <form class="footer-subscribing-form">
-                        <input type="email" id="footer-subscribing-email-input" name="subscribing-email" class="footer-subscribing-input">
-                        <label for="footer-subscribing-email-label" class="footer-subscribing-label">
-                            <button type="submit" class="footer-subscribing-button"> Подписаться 
-                                <svg class="input-icon">
-                                    <use href="./images/icons.svg#icon-send"></use>
-                                </svg>
-                            </button>
-                        </label>
-                    </form>
+                <p class="footer-subscribing-title">Подпишитесь на рассылку</p>
+                <form class="footer-subscribing-form" action="javascript:void(0)">
+                    <input type="email" id="footer-subscribing-email-input" name="subscribing-email" placeholder="E-mail"
+                        class="footer-subscribing-input">
+                    <label for="footer-subscribing-email-label" class="footer-subscribing-label">
+                        <button type="submit" class="footer-subscribing-button"> Подписаться
+                            <svg class="subscribe-icon">
+                                <use href="./images/icons.svg#icon-send"></use>
+                            </svg>
+                        </button>
+                    </label>
+                </form>
             </div>
         </div>
     </footer>
@@ -479,12 +480,12 @@
                 <!-- </div> -->
             </form>
             <form class="checkbox-form">
-                <input type="checkbox" id="conditions-checkbox" name="conditions-checkbox" class="input-checkbox" >
+                <input type="checkbox" id="conditions-checkbox" name="conditions-checkbox" class="input-checkbox">
                 <label for="conditions-checkbox" class="modal-checkbox-comment"> Соглашаюсь с рассылкой и принимаю
                     <a href="#">Условия договора</a></label>
                 <svg class="check-icon">
-                        <use href="./images/icons.svg#icon-check"></use>
-                </svg>    
+                    <use href="./images/icons.svg#icon-check"></use>
+                </svg>
             </form>
             <button type="submit" class="backdrop-submit-button">Отправить</button>
         </div>

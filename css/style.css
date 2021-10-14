@@ -453,7 +453,8 @@ img {
 
 .footer-container {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
+  justify-content: center;
 }
 
 .footer-adress {
@@ -514,6 +515,7 @@ img {
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   margin-bottom: 20px;
+  margin-top: 12px;
 }
 
 .social-link-footer {
@@ -526,19 +528,46 @@ img {
   fill: var(--body-fonts-onbackgraund-color);
 }
 
+.footer-subscribing {
+    flex-grow: 1;
+}
 .footer-subscribing-form {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
+    /* flex-wrap: wrap; */
+    /* justify-content: flex-end; */
+}
+.footer-subscribing-input{
     flex-grow: 1;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    background-color: transparent;
+    padding-left: 16px;
+    color: var(--body-fonts-onbackgraund-color);
+    margin-right: 12px;
+
+}
+.footer-subscribing-input::placeholder{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: calc(20 / 16);
+    text-align: left;
+    vertical-align: center;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
 }
 .footer-subscribing-button {
-    margin-left: 12px;
+    display: flex;
+    padding-left: 28px;
+    padding-right: 28px;
+    justify-content: space-between;
+
 }
-/* .footer-subscribing-input {
-    flex-grow: 1;
-    width: 100%;
-} */
+.subscribe-icon {
+width: 24px;
+height: 24px;
+}
+
 /*---------------PORTFOLIO-----------------*/
 .products-list {
   display: flex;
@@ -650,7 +679,7 @@ img {
   letter-spacing: 0.03em;
   color: var(--general-text-fonts-color);
 }
-
+/*-----------BACKDROP------------*/
 .backdrop {
   position: fixed;
   display: flex;
@@ -680,8 +709,6 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
-  /* flex-wrap: wrap; */
   padding: 40px;
 }
 .close-btn {
@@ -718,9 +745,6 @@ img {
   text-align: center;
 }
 .servise-form {
-  /* display: flex;
-    flex-direction: column;
-    justify-content: space-between; */
   width: 100%;
   margin-bottom: 20px;
 }
@@ -822,7 +846,4 @@ img {
     width: 13px;
     height: 20px;
     fill: violet;
-}
-.submit-button {
-    box-shadow: ;
 }
