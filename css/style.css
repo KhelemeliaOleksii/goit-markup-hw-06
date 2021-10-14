@@ -812,13 +812,15 @@ img {
     justify-content: space-between;
     margin: 0 13px 30px 13px;
 }
-.modal-checkbox-comment {
+.modal-checkbox-comment, 
+.input-checkbox {
   font-size: 14px;
   font-weight: 400;
   line-height: calc(18 / 14);
   text-align: left;
   letter-spacing: 0.03em;
 }
+
 .modal-checkbox-comment a {
   color: var(--active-link-fonts-color);
   text-decoration-skip-ink: none;
@@ -838,6 +840,7 @@ img {
     transition: background-color  var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1),
         border-width var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .input-checkbox:checked + .modal-checkbox-comment .custom-checkbox-box {
     background-color: var(--active-btn-background-color);
     border-width: 0;
