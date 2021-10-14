@@ -828,22 +828,25 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    left: -1px;
-    top: 1px;
+    left: 0px;
+    top: 0px;
     background-color: var(--cards-background-color);
     width: 16px;
     height: 15px;
     border: 2px solid #212121;
     border-radius: 3px;
-    transition: background-color  1000ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color  1000ms cubic-bezier(0.4, 0, 0.2, 1),
+            border 1000ms cubic-bezier(0.4, 0, 0.2, 1);
     /* var(--animation-time) */
 }
-.input-checkbox:checked + .modal-checkbox-comment .custom-checkbox-box {
+.input-checkbox:checked + .custom-checkbox-box {
     background-color: var(--active-btn-background-color);
-    border:none;
+    border-width: 0;
 }
 .check-icon {
   width: 13px;
   height: 20px;
   fill: var(--body-fonts-onbackgraund-color);
+  stroke-dasharray: 100% 100%;
+  stroke-dashoffset: 0%;
 }
