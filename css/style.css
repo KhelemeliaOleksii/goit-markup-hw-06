@@ -819,6 +819,7 @@ img {
   line-height: calc(18 / 14);
   text-align: left;
   letter-spacing: 0.03em;
+  border: none;
 }
 
 .modal-checkbox-comment a {
@@ -834,7 +835,7 @@ img {
     top: 0px;
     background-color: var(--cards-background-color);
     width: 16px;
-    height: 15px;
+    height: 16px;
     border: 2px solid #212121;
     border-radius: 3px;
     transition: background-color  var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1),
